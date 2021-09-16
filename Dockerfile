@@ -47,7 +47,9 @@ RUN apt -y update && '2' | apt install -y \
   ros-melodic-gmapping \
   ros-melodic-navigation \
   ros-melodic-interactive-markers \
-  ros-melodic-turtlebot3-gazebo
+  ros-melodic-turtlebot3-gazebo \
+  ros-melodic-stage \
+  ros-melodic-stage-ros
 
 # environment setup (add to .bashrc)
 RUN mkdir -p /root/catkin_ws/src
