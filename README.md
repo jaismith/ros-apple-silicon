@@ -1,6 +1,6 @@
-# ROS on Apple Silicon
+_This is an Apple Silicon adaptation of @quattrinili's guide [here](https://github.com/quattrinili/vnc-ros)_.
 
-_This is an Apple Silicon adaptation of @quattrinili's guide [here](https://github.com/quattrinili/vnc-ros)_
+# ROS on Apple Silicon
 
 Before following the next two steps, install Docker ([installation instructions for Mac](https://docs.docker.com/docker-for-mac/install/).
 
