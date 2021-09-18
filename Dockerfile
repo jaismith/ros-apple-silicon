@@ -52,10 +52,8 @@ RUN apt -y update && '2' | apt install -y \
   ros-melodic-stage-ros
 
 # environment setup (add to .bashrc)
-RUN mkdir -p /root/catkin_ws/src
+RUN mkdir -p /root/catkin_ws
 WORKDIR /root/catkin_ws
 RUN /bin/bash -c "source /opt/ros/melodic/setup.bash"
 RUN echo "source /opt/ros/melodic/setup.sh" >> /root/.bashrc
-RUN echo "source /root/catkin_ws/devel/setup.bash" >> /root/.bashrc
 RUN echo "defshell -bash" >> ~/.screenrc
-WORKDIR /root/catkin_ws/src
