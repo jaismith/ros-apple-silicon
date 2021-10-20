@@ -9,6 +9,16 @@ services:
       - ros.env
     networks:
       - x11
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    volumes: 
+      - ./workspace:/root/catkin_ws/
+      - ./husarnet-v:/var/lib/husarnet
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=0
+    hostname: docker
   novnc:  
     image: theasp/novnc:latest
     env_file:
